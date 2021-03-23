@@ -7,17 +7,16 @@ rval = rval + 1
 // detects button press
 document.getElementById('button').addEventListener('click', function1)
 document.getElementById('restart').addEventListener('click', restart)
-document.getElementById('text').innerHTML = rval
 // functions
 function function1 () {
-uval = document.getElementById('input').value
-uval = parseInt(uval)
-if (uval == rval) {
-  alert('you guessed corectly! the number has been reset')
-  restart ()
+  uval = document.getElementById('input').value
+  uval = parseInt(uval)
+  if (uval == rval) {
+    alert('you guessed corectly! the number has been reset')
+    restart ()
 }
-if (uval != rval) {
-  alert('you guessed incorectly ;(')
+  if (uval != rval) {
+    alert('you guessed incorectly ;(')
 }
 }
 function restart () {
