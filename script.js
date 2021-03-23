@@ -11,13 +11,13 @@ document.getElementById('restart').addEventListener('click', restart)
 function function1 () {
   uval = document.getElementById('input').value
   uval = parseInt(uval)
-  if (uval == rval) {
+  if (uval === rval) {
     alert('you guessed corectly! the number has been reset')
-    restart ()
-}
-  if (uval != rval) {
+    restart()
+  }
+  if (uval !== rval) {
     alert('you guessed incorectly ;(')
-}
+  }
 }
 function restart () {
   window.location.href = 'https://icsor-7-01-html.victorphillips1.repl.co/'
